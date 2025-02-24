@@ -3,18 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Chapter 3: What is a Speaker?</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
-    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
-    h1, h2, h3 { color: #222; }
-    .hidden { display: none; }
-    .feedback { margin-top: 20px; }
-    .correct { color: green; }
-    .incorrect { color: red; }
-    button { padding: 8px 12px; margin-top: 10px; }
-    .question { margin-bottom: 15px; }
-  </style>
+ <style>
+  /* Global Body Style */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for page content */
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Header and Navigation */
+  header {
+    background: #1e88e5;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #222;
+    margin-top: 0;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Quiz Questions */
+  .question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Feedback area */
+  .feedback {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    border-radius: 4px;
+  }
+  .correct {
+    color: green;
+  }
+  .incorrect {
+    color: red;
+  }
+  
+  /* Hidden elements */
+  .hidden {
+    display: none;
+  }
+</style>
 </head>
 <body>
   <!-- Navigation Header -->
@@ -35,6 +107,7 @@
   </header>
 
   <!-- Pre-Quiz Content (1-Pager) for Chapter 3 -->
+  <div class="container">
   <div id="contentView">
     <h1>Chapter 3: What is a Speaker?</h1>
     <p>A speaker is a transducer that converts electrical signals into sound waves. It consists of several key components, each playing a role in shaping the sound we hear.</p>
@@ -198,7 +271,7 @@
       <button type="button" onclick="toggleView()">Back to Content</button>
     </form>
   </div>
-
+</div>
   <script>
     // Toggle between pre-quiz content and quiz view
     function toggleView() {
