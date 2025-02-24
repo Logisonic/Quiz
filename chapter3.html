@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 3: What is a Speaker?</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 3 -->
+  <div id="contentView">
+    <h1>Chapter 3: What is a Speaker?</h1>
+    <p>A speaker is a transducer that converts electrical signals into sound waves. It consists of several key components, each playing a role in shaping the sound we hear.</p>
+    
+    <h2>1. Speaker Components</h2>
+    <ul>
+      <li><strong>Drivers</strong> – The actual sound-producing parts of the speaker:
+        <ul>
+          <li><strong>Tweeter (High Frequencies):</strong> Handles treble (above ~2 kHz).</li>
+          <li><strong>Midrange Driver (Mid Frequencies):</strong> Covers vocals/instruments (~250 Hz – 2 kHz).</li>
+          <li><strong>Woofer (Low Frequencies):</strong> Produces bass (~20 Hz – 500 Hz).</li>
+          <li><strong>Subwoofer (Deep Bass):</strong> Handles sub-bass (below 80 Hz).</li>
+        </ul>
+      </li>
+      <li><strong>Crossover</strong> – An internal circuit that splits frequencies and sends them to the correct driver.</li>
+      <li><strong>Cabinet (Enclosure)</strong> – The speaker box, affecting resonance and bass response.</li>
+      <li><strong>Port (if present)</strong> – A hole or duct that enhances low-frequency output.</li>
+    </ul>
+    
+    <h2>2. Speaker Properties</h2>
+    <ul>
+      <li><strong>Impedance (Ω):</strong> The speaker’s electrical resistance. Common values: 4Ω, 6Ω, 8Ω. Lower impedance requires a more powerful amplifier.</li>
+      <li><strong>Sensitivity (dB SPL @ 1W/1m):</strong> Measures how loud a speaker gets with 1 watt of power at 1 meter distance.<br>
+        <em>Example:</em> A 90 dB sensitivity speaker needs half the power of an 87 dB speaker for the same volume.
+      </li>
+      <li><strong>Frequency Response (Hz):</strong> The range of sound a speaker can reproduce. <em>Example:</em> 40 Hz – 20 kHz.</li>
+      <li><strong>Power Handling (Watts RMS &amp; Peak):</strong> How much power the speaker can handle continuously (RMS) and in short bursts (Peak).</li>
+    </ul>
+    
+    <h2>3. Passive vs. Active Speakers</h2>
+    <p><strong>Passive Speakers:</strong> Require an external amplifier (most HiFi/home theater speakers).</p>
+    <p><strong>Active Speakers:</strong> Have built-in amplifiers (like studio monitors or Bluetooth speakers).</p>
+    
+    <h2>4. Speaker Placement &amp; Room Effects</h2>
+    <p><strong>Speaker Placement:</strong> Affects soundstage, imaging, and bass response.</p>
+    <p><strong>Room Effects:</strong> Rooms can create reflections and standing waves, impacting clarity.</p>
+    <p><strong>Solution:</strong> Correct placement and room treatment help improve sound.</p>
+    
+    <h2>5. Conclusion</h2>
+    <p>This is the foundation of speakers—we’ll go deeper into crossover designs, frequency response graphs, and impedance curves in later chapters!</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) for Chapter 3 -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 3 Quiz: What is a Speaker?</h1>
+    <form id="quizForm">
+      <!-- Section 1: Basic Concepts -->
+      <div class="question">
+        <p>1. What is the primary function of a speaker?</p>
+        <label><input type="radio" name="q1" value="a"> a) Convert sound waves into electrical signals</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Convert electrical signals into sound waves</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Store and process digital audio files</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Amplify the incoming audio signal</label>
+      </div>
+      <div class="question">
+        <p>2. Which component of a speaker is responsible for producing high frequencies?</p>
+        <label><input type="radio" name="q2" value="a"> a) Woofer</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Midrange driver</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Tweeter</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Crossover</label>
+      </div>
+      <div class="question">
+        <p>3. Which type of speaker driver is primarily responsible for handling bass frequencies?</p>
+        <label><input type="radio" name="q3" value="a"> a) Midrange driver</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Tweeter</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Woofer</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Super tweeter</label>
+      </div>
+      <div class="question">
+        <p>4. What is the purpose of a crossover in a speaker?</p>
+        <label><input type="radio" name="q4" value="a"> a) To amplify the sound</label><br>
+        <label><input type="radio" name="q4" value="b"> b) To split frequencies and send them to the appropriate drivers</label><br>
+        <label><input type="radio" name="q4" value="c"> c) To connect the speaker to an amplifier</label><br>
+        <label><input type="radio" name="q4" value="d"> d) To boost bass output</label>
+      </div>
+      <div class="question">
+        <p>5. What does a speaker enclosure (cabinet) affect the most?</p>
+        <label><input type="radio" name="q5" value="a"> a) The speaker’s sensitivity</label><br>
+        <label><input type="radio" name="q5" value="b"> b) The distribution of power across drivers</label><br>
+        <label><input type="radio" name="q5" value="c"> c) The resonance and bass response</label><br>
+        <label><input type="radio" name="q5" value="d"> d) The impedance rating</label>
+      </div>
+
+      <!-- Section 2: Speaker Properties -->
+      <div class="question">
+        <p>6. What is the electrical resistance of a speaker, measured in ohms (Ω), called?</p>
+        <label><input type="radio" name="q6" value="a"> a) Wattage</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Sensitivity</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Impedance</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Distortion</label>
+      </div>
+      <div class="question">
+        <p>7. If a speaker has an impedance of 4Ω, what is generally true about its power requirements?</p>
+        <label><input type="radio" name="q7" value="a"> a) It requires more power than an 8Ω speaker</label><br>
+        <label><input type="radio" name="q7" value="b"> b) It requires less power than an 8Ω speaker</label><br>
+        <label><input type="radio" name="q7" value="c"> c) It only works with passive amplifiers</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Impedance has no impact on power requirements</label>
+      </div>
+      <div class="question">
+        <p>8. What does a speaker’s sensitivity rating (e.g., 90 dB @ 1W/1m) indicate?</p>
+        <label><input type="radio" name="q8" value="a"> a) The speaker’s impedance level</label><br>
+        <label><input type="radio" name="q8" value="b"> b) How much power it can handle before distortion</label><br>
+        <label><input type="radio" name="q8" value="c"> c) How loud it plays with 1 watt of power at 1 meter distance</label><br>
+        <label><input type="radio" name="q8" value="d"> d) The frequency range of the speaker</label>
+      </div>
+      <div class="question">
+        <p>9. A speaker with a frequency response of 40 Hz – 20 kHz can reproduce:</p>
+        <label><input type="radio" name="q9" value="a"> a) Only midrange and high frequencies</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Deep bass, midrange, and treble frequencies</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Frequencies above 40 kHz</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Only low frequencies</label>
+      </div>
+      <div class="question">
+        <p>10. If two speakers have identical power handling but different sensitivities, which will sound louder at the same power level?</p>
+        <label><input type="radio" name="q10" value="a"> a) The one with higher impedance</label><br>
+        <label><input type="radio" name="q10" value="b"> b) The one with lower impedance</label><br>
+        <label><input type="radio" name="q10" value="c"> c) The one with lower sensitivity</label><br>
+        <label><input type="radio" name="q10" value="d"> d) The one with higher sensitivity</label>
+      </div>
+
+      <!-- Section 3: Speaker Types and Configurations -->
+      <div class="question">
+        <p>11. What is the main difference between passive and active speakers?</p>
+        <label><input type="radio" name="q11" value="a"> a) Active speakers require an external amplifier, passive speakers have built-in amplifiers</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Passive speakers require an external amplifier, active speakers have built-in amplifiers</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Passive speakers are for home theaters only, while active speakers are for music</label><br>
+        <label><input type="radio" name="q11" value="d"> d) Active speakers cannot connect to an AVR</label>
+      </div>
+      <div class="question">
+        <p>12. Which type of speaker is designed to produce sub-bass frequencies (below 80 Hz)?</p>
+        <label><input type="radio" name="q12" value="a"> a) Midrange driver</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Tweeter</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Woofer</label><br>
+        <label><input type="radio" name="q12" value="d"> d) Subwoofer</label>
+      </div>
+      <div class="question">
+        <p>13. In a 2-way speaker system, which drivers are typically present?</p>
+        <label><input type="radio" name="q13" value="a"> a) Tweeter and subwoofer</label><br>
+        <label><input type="radio" name="q13" value="b"> b) Woofer and midrange</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Tweeter and woofer</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Woofer, tweeter, and midrange</label>
+      </div>
+      <div class="question">
+        <p>14. If a room has excessive bass resonance, which speaker placement technique might help reduce it?</p>
+        <label><input type="radio" name="q14" value="a"> a) Placing the speakers closer to the walls</label><br>
+        <label><input type="radio" name="q14" value="b"> b) Placing speakers on the floor</label><br>
+        <label><input type="radio" name="q14" value="c"> c) Moving the speakers away from walls and corners</label><br>
+        <label><input type="radio" name="q14" value="d"> d) Increasing the crossover frequency</label>
+      </div>
+      <div class="question">
+        <p>15. What happens if you connect a 4Ω speaker to an amplifier rated for 8Ω speakers?</p>
+        <label><input type="radio" name="q15" value="a"> a) The amplifier will deliver less power to the speaker</label><br>
+        <label><input type="radio" name="q15" value="b"> b) The speaker will not produce sound</label><br>
+        <label><input type="radio" name="q15" value="c"> c) The amplifier may overheat or shut down</label><br>
+        <label><input type="radio" name="q15" value="d"> d) The speaker’s frequency response will change</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+
+    // Answer key for Chapter 3 Quiz
+    const answerKey = [
+      "b", // Q1
+      "c", // Q2
+      "c", // Q3
+      "b", // Q4
+      "c", // Q5
+      "c", // Q6
+      "a", // Q7
+      "c", // Q8
+      "b", // Q9
+      "d", // Q10
+      "b", // Q11
+      "d", // Q12
+      "c", // Q13
+      "c", // Q14
+      "c"  // Q15
+    ];
+
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 11: Surround Sound Codecs &amp; Configurations</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 11 -->
+  <div id="contentView">
+    <h1>Chapter 11: Surround Sound Codecs &amp; Configurations — Pre-Quiz One-Pager</h1>
+    <p>This chapter explores surround sound formats and speaker configurations. You will learn about:</p>
+    <ul>
+      <li><strong>Surround Sound Formats:</strong> Differences between 5.1, 7.1, and Atmos systems.</li>
+      <li><strong>Height Channels:</strong> The role of height channels and overhead speakers in immersive sound.</li>
+      <li><strong>Digital Codecs:</strong> How digital codecs (e.g., Dolby, DTS) affect audio reproduction and immersive experiences.</li>
+    </ul>
+    <p>These concepts are essential for understanding how to set up and optimize a home theater system.</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View for Chapter 11 (initially hidden) -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 11 Quiz: Surround Sound Codecs &amp; Configurations</h1>
+    <form id="quizForm">
+      <!-- Section 1: Surround Sound Formats -->
+      <div class="question">
+        <p>1. What does a 5.1 system refer to?</p>
+        <label><input type="radio" name="q1" value="a"> a) 5 speakers and 1 subwoofer</label><br>
+        <label><input type="radio" name="q1" value="b"> b) 5 speakers and 1 amplifier</label><br>
+        <label><input type="radio" name="q1" value="c"> c) 5 channels with stereo</label><br>
+        <label><input type="radio" name="q1" value="d"> d) 5 subwoofers</label>
+      </div>
+      <div class="question">
+        <p>2. What is the main difference between 5.1 and 7.1 systems?</p>
+        <label><input type="radio" name="q2" value="a"> a) Number of subwoofers</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Number of surround channels</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Number of amplifiers</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Speaker impedance requirements</label>
+      </div>
+      <div class="question">
+        <p>3. What is Dolby Atmos known for?</p>
+        <label><input type="radio" name="q3" value="a"> a) Object-based audio</label><br>
+        <label><input type="radio" name="q3" value="b"> b) High efficiency</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Low latency</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Analog sound quality</label>
+      </div>
+      <div class="question">
+        <p>4. How do height channels affect sound immersion?</p>
+        <label><input type="radio" name="q4" value="a"> a) They enhance vertical sound placement</label><br>
+        <label><input type="radio" name="q4" value="b"> b) They increase bass output</label><br>
+        <label><input type="radio" name="q4" value="c"> c) They control midrange frequencies</label><br>
+        <label><input type="radio" name="q4" value="d"> d) They improve amplifier power</label>
+      </div>
+      <div class="question">
+        <p>5. Which format is most suitable for object-based audio?</p>
+        <label><input type="radio" name="q5" value="a"> a) Dolby Atmos</label><br>
+        <label><input type="radio" name="q5" value="b"> b) DTS:X</label><br>
+        <label><input type="radio" name="q5" value="c"> c) 5.1 Surround</label><br>
+        <label><input type="radio" name="q5" value="d"> d) 7.1 Surround</label>
+      </div>
+
+      <!-- Section 2: Height Channels and Overhead Speakers -->
+      <div class="question">
+        <p>6. Which of these configurations includes height channels?</p>
+        <label><input type="radio" name="q6" value="a"> a) 2.1</label><br>
+        <label><input type="radio" name="q6" value="b"> b) 5.1</label><br>
+        <label><input type="radio" name="q6" value="c"> c) 7.1</label><br>
+        <label><input type="radio" name="q6" value="d"> d) 5.1.2</label>
+      </div>
+      <div class="question">
+        <p>7. Up-firing speakers are designed to:</p>
+        <label><input type="radio" name="q7" value="a"> a) Improve bass response</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Reflect sound off the ceiling for overhead effects</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Enhance dialogue clarity</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Increase surround sound volume</label>
+      </div>
+      <div class="question">
+        <p>8. In a 5.1.4 setup, the “4” represents:</p>
+        <label><input type="radio" name="q8" value="a"> a) Subwoofers</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Height channels</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Rear surround speakers</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Front left and right speakers</label>
+      </div>
+      <div class="question">
+        <p>9. Dolby Atmos and DTS:X are examples of:</p>
+        <label><input type="radio" name="q9" value="a"> a) Lossy audio formats</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Object-based audio codecs</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Stereo enhancement algorithms</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Virtual surround sound technologies</label>
+      </div>
+      <div class="question">
+        <p>10. What’s the primary advantage of using height channels?</p>
+        <label><input type="radio" name="q10" value="a"> a) Louder sound output</label><br>
+        <label><input type="radio" name="q10" value="b"> b) More immersive 3D sound experience</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Improved power efficiency</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Reduced total harmonic distortion</label>
+      </div>
+
+      <!-- Section 3: Digital Codecs and Audio Formats -->
+      <div class="question">
+        <p>11. Which digital codec is lossless and supports up to 7.1 channels?</p>
+        <label><input type="radio" name="q11" value="a"> a) Dolby Digital (AC-3)</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Dolby TrueHD</label><br>
+        <label><input type="radio" name="q11" value="c"> c) MP3</label><br>
+        <label><input type="radio" name="q11" value="d"> d) AAC</label>
+      </div>
+      <div class="question">
+        <p>12. PCM (Pulse Code Modulation) is known for:</p>
+        <label><input type="radio" name="q12" value="a"> a) Compressed audio with high efficiency</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Uncompressed digital audio for high-fidelity sound</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Object-based audio processing</label><br>
+        <label><input type="radio" name="q12" value="d"> d) Virtual surround sound simulation</label>
+      </div>
+      <div class="question">
+        <p>13. Dolby Digital is commonly used in:</p>
+        <label><input type="radio" name="q13" value="a"> a) CDs</label><br>
+        <label><input type="radio" name="q13" value="b"> b) DVD, Blu-ray, and streaming services</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Vinyl records</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Analog radio broadcasts</label>
+      </div>
+      <div class="question">
+        <p>14. Which codec is object-based and allows flexible speaker configurations?</p>
+        <label><input type="radio" name="q14" value="a"> a) Dolby Atmos</label><br>
+        <label><input type="radio" name="q14" value="b"> b) Dolby Digital</label><br>
+        <label><input type="radio" name="q14" value="c"> c) DTS-HD Master Audio</label><br>
+        <label><input type="radio" name="q14" value="d"> d) PCM</label>
+      </div>
+      <div class="question">
+        <p>15. DTS-HD Master Audio is typically used for:</p>
+        <label><input type="radio" name="q15" value="a"> a) Lossy streaming audio</label><br>
+        <label><input type="radio" name="q15" value="b"> b) High-definition, lossless audio on Blu-ray discs</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Mono audio recordings</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Virtual reality applications</label>
+      </div>
+
+      <!-- Section 4: Real-World Applications -->
+      <div class="question">
+        <p>16. Upmixing is used to:</p>
+        <label><input type="radio" name="q16" value="a"> a) Convert stereo audio to multi-channel surround sound</label><br>
+        <label><input type="radio" name="q16" value="b"> b) Reduce speaker impedance</label><br>
+        <label><input type="radio" name="q16" value="c"> c) Enhance bass response in subwoofers</label><br>
+        <label><input type="radio" name="q16" value="d"> d) Increase amplifier power output</label>
+      </div>
+      <div class="question">
+        <p>17. Downmixing is required when:</p>
+        <label><input type="radio" name="q17" value="a"> a) Playing surround sound on a stereo system</label><br>
+        <label><input type="radio" name="q17" value="b"> b) Increasing surround sound channels</label><br>
+        <label><input type="radio" name="q17" value="c"> c) Using a powered subwoofer</label><br>
+        <label><input type="radio" name="q17" value="d"> d) Matching impedance between speakers</label>
+      </div>
+      <div class="question">
+        <p>18. Which of the following supports height channels for a 3D sound experience?</p>
+        <label><input type="radio" name="q18" value="a"> a) PCM</label><br>
+        <label><input type="radio" name="q18" value="b"> b) Dolby Atmos</label><br>
+        <label><input type="radio" name="q18" value="c"> c) Dolby Digital</label><br>
+        <label><input type="radio" name="q18" value="d"> d) MP3</label>
+      </div>
+      <div class="question">
+        <p>19. Which configuration is ideal for a large room with a wide seating area?</p>
+        <label><input type="radio" name="q19" value="a"> a) 2.1</label><br>
+        <label><input type="radio" name="q19" value="b"> b) 5.1</label><br>
+        <label><input type="radio" name="q19" value="c"> c) 7.1</label><br>
+        <label><input type="radio" name="q19" value="d"> d) 5.1.2</label>
+      </div>
+      <div class="question">
+        <p>20. A 7.1.4 configuration is best described as:</p>
+        <label><input type="radio" name="q20" value="a"> a) 7 speakers, 1 subwoofer, and 4 height channels</label><br>
+        <label><input type="radio" name="q20" value="b"> b) 7 subwoofers and 4 surround speakers</label><br>
+        <label><input type="radio" name="q20" value="c"> c) 7 amplifiers and 4 tweeters</label><br>
+        <label><input type="radio" name="q20" value="d"> d) 7 front speakers and 4 rear speakers</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+    
+    // Answer key for Chapter 11 Quiz
+    const answerKey = [
+      "a", // Q1
+      "b", // Q2
+      "a", // Q3
+      "a", // Q4
+      "a", // Q5
+      "d", // Q6
+      "b", // Q7
+      "b", // Q8
+      "b", // Q9
+      "b", // Q10
+      "b", // Q11
+      "b", // Q12
+      "b", // Q13
+      "a", // Q14
+      "b", // Q15
+      "a", // Q16
+      "a", // Q17
+      "b", // Q18
+      "c", // Q19
+      "a"  // Q20
+    ];
+    
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

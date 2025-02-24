@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 7: Subwoofers</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 7 -->
+  <div id="contentView">
+    <h1>Chapter 7: Subwoofers — Pre-Quiz One-Pager</h1>
+    <h2>1. What is a Subwoofer?</h2>
+    <p>A subwoofer is a speaker designed to reproduce low-frequency sounds — the deep bass you feel more than hear. This includes:</p>
+    <ul>
+      <li>Explosions in movies 🎥</li>
+      <li>Kick drums and bass lines in music 🎶</li>
+      <li>Room-shaking effects in home theater setups 🌪️</li>
+    </ul>
+    <p>Subwoofers handle frequencies from ~20Hz to 120Hz, below what most regular speakers can manage.</p>
+    
+    <h2>2. Types of Subwoofers by Enclosure Design</h2>
+    <p>The enclosure (cabinet) design significantly affects a subwoofer's sound:</p>
+    <ul>
+      <li><strong>Sealed Subwoofers:</strong> Tight, accurate, and controlled bass with fast response. Great for music. 🎶</li>
+      <li><strong>Ported (Bass Reflex) Subwoofers:</strong> Louder and more efficient with deeper, boomier bass. Ideal for home theater. 🎥</li>
+      <li><strong>Band-Pass Subwoofers:</strong> A more complex design where the driver is hidden inside the enclosure, and sound exits through a tuned port. Produces high output in a narrow frequency range — powerful but less accurate.</li>
+      <li><strong>Passive Radiator Subwoofers:</strong> Use an additional non-powered driver (passive radiator) that moves in response to air pressure, enhancing low-frequency output without a large port.</li>
+      <li><strong>Horn-Loaded Subwoofers:</strong> Use a folded horn inside the enclosure to boost efficiency and output — often used in large venues but sometimes found in high-end home systems.</li>
+    </ul>
+    
+    <h2>3. Powered vs. Passive Subwoofers</h2>
+    <p><strong>Powered (Active) Subwoofers:</strong> Have a built-in amplifier — most common in home audio.</p>
+    <p><strong>Passive Subwoofers:</strong> Need an external amplifier — often seen in custom installations or older systems.</p>
+    
+    <h2>4. Subwoofer Placement Matters</h2>
+    <p>Where you place your sub impacts how it sounds:</p>
+    <ul>
+      <li><strong>Corner Placement:</strong> Increases bass output but can cause boominess.</li>
+      <li><strong>Along a Wall:</strong> Balances output and accuracy.</li>
+      <li><strong>Near Listening Position:</strong> Gives tight, immediate bass response.</li>
+      <li><strong>Subwoofer Crawl:</strong> A method where you move around the room to find the spot where bass sounds best.</li>
+    </ul>
+    
+    <h2>5. Subwoofer Settings</h2>
+    <ul>
+      <li><strong>Crossover:</strong> The frequency where the sub takes over from your main speakers (often set at 80Hz).</li>
+      <li><strong>Phase:</strong> Aligns the subwoofer’s bass with the main speakers.</li>
+      <li><strong>Volume/Gain:</strong> Controls how much bass the subwoofer produces — balance is key!</li>
+      <li><strong>LFE (Low-Frequency Effects):</strong> A dedicated channel in movie soundtracks for deep bass — set your AVR to send LFE only to the sub.</li>
+    </ul>
+    
+    <h2>6. Why a Good Subwoofer Matters</h2>
+    <p>A great subwoofer doesn’t just add bass — it adds depth, weight, and realism to everything you hear. It fills the room with low-end energy without overpowering the mix.</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) for Chapter 7 -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 7 Quiz: Subwoofers</h1>
+    <form id="quizForm">
+      <!-- Section 1: Basics of Subwoofers -->
+      <div class="question">
+        <p>1. What is the primary frequency range a subwoofer handles?</p>
+        <label><input type="radio" name="q1" value="a"> a) 500Hz–5kHz</label><br>
+        <label><input type="radio" name="q1" value="b"> b) 20Hz–120Hz</label><br>
+        <label><input type="radio" name="q1" value="c"> c) 100Hz–1kHz</label><br>
+        <label><input type="radio" name="q1" value="d"> d) 10kHz–20kHz</label>
+      </div>
+      <div class="question">
+        <p>2. Why is a subwoofer essential in a home theater system?</p>
+        <label><input type="radio" name="q2" value="a"> a) It improves dialogue clarity</label><br>
+        <label><input type="radio" name="q2" value="b"> b) It handles midrange frequencies</label><br>
+        <label><input type="radio" name="q2" value="c"> c) It reproduces low-frequency effects (LFE) and deep bass</label><br>
+        <label><input type="radio" name="q2" value="d"> d) It creates surround sound effects</label>
+      </div>
+      <div class="question">
+        <p>3. Which of these is NOT a type of subwoofer enclosure design?</p>
+        <label><input type="radio" name="q3" value="a"> a) Sealed</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Ported</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Electrostatic</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Band-pass</label>
+      </div>
+      
+      <!-- Section 2: Subwoofer Types and Designs -->
+      <div class="question">
+        <p>4. What’s the main advantage of a sealed subwoofer?</p>
+        <label><input type="radio" name="q4" value="a"> a) Louder output</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Tighter and more accurate bass</label><br>
+        <label><input type="radio" name="q4" value="c"> c) More efficient power handling</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Enhanced high frequencies</label>
+      </div>
+      <div class="question">
+        <p>5. Which subwoofer design uses a tuned port to boost low-frequency output?</p>
+        <label><input type="radio" name="q5" value="a"> a) Sealed</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Band-pass</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Ported</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Passive radiator</label>
+      </div>
+      <div class="question">
+        <p>6. A band-pass subwoofer is known for:</p>
+        <label><input type="radio" name="q6" value="a"> a) Broad frequency response</label><br>
+        <label><input type="radio" name="q6" value="b"> b) High output in a narrow frequency range</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Better high-frequency performance</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Minimal bass extension</label>
+      </div>
+      <div class="question">
+        <p>7. In a passive radiator subwoofer, what does the passive radiator do?</p>
+        <label><input type="radio" name="q7" value="a"> a) Acts as a backup speaker</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Amplifies midrange sound</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Moves air to enhance low-frequency output</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Controls phase alignment</label>
+      </div>
+      <div class="question">
+        <p>8. Horn-loaded subwoofers are often used for:</p>
+        <label><input type="radio" name="q8" value="a"> a) Compact bookshelf systems</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Large venues and high-efficiency setups</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Low-power desktop speakers</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Wireless speaker systems</label>
+      </div>
+      
+      <!-- Section 3: Powered vs. Passive Subwoofers -->
+      <div class="question">
+        <p>9. Which type of subwoofer has a built-in amplifier?</p>
+        <label><input type="radio" name="q9" value="a"> a) Passive subwoofer</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Powered (active) subwoofer</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Band-pass subwoofer</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Sealed subwoofer</label>
+      </div>
+      <div class="question">
+        <p>10. What’s a key advantage of powered subwoofers in home theater setups?</p>
+        <label><input type="radio" name="q10" value="a"> a) They require separate external amplifiers</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Easier setup and matched power handling</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Smaller cabinet size</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Better midrange clarity</label>
+      </div>
+      
+      <!-- Section 4: Subwoofer Placement and Setup -->
+      <div class="question">
+        <p>11. Placing a subwoofer in a corner generally results in:</p>
+        <label><input type="radio" name="q11" value="a"> a) More balanced bass</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Increased bass output, sometimes with boominess</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Decreased low-frequency extension</label><br>
+        <label><input type="radio" name="q11" value="d"> d) Improved high-frequency response</label>
+      </div>
+      <div class="question">
+        <p>12. The “subwoofer crawl” is a method used to:</p>
+        <label><input type="radio" name="q12" value="a"> a) Adjust phase alignment</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Find the ideal subwoofer placement</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Set the crossover frequency</label><br>
+        <label><input type="radio" name="q12" value="d"> d) Balance speaker levels</label>
+      </div>
+      <div class="question">
+        <p>13. Why should you align the phase of your subwoofer with your main speakers?</p>
+        <label><input type="radio" name="q13" value="a"> a) To avoid midrange distortion</label><br>
+        <label><input type="radio" name="q13" value="b"> b) To ensure bass frequencies are in sync</label><br>
+        <label><input type="radio" name="q13" value="c"> c) To improve dialogue clarity</label><br>
+        <label><input type="radio" name="q13" value="d"> d) To enhance stereo imaging</label>
+      </div>
+      
+      <!-- Section 5: Subwoofer Settings -->
+      <div class="question">
+        <p>14. What is the typical crossover frequency for a subwoofer in a home theater system?</p>
+        <label><input type="radio" name="q14" value="a"> a) 20Hz</label><br>
+        <label><input type="radio" name="q14" value="b"> b) 50Hz</label><br>
+        <label><input type="radio" name="q14" value="c"> c) 80Hz</label><br>
+        <label><input type="radio" name="q14" value="d"> d) 200Hz</label>
+      </div>
+      <div class="question">
+        <p>15. The LFE (Low-Frequency Effects) channel in a surround sound system is designed for:</p>
+        <label><input type="radio" name="q15" value="a"> a) High-frequency effects</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Bass and low-frequency sounds</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Center channel dialogue</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Surround sound effects</label>
+      </div>
+      <div class="question">
+        <p>16. Gain or volume control on a subwoofer adjusts:</p>
+        <label><input type="radio" name="q16" value="a"> a) The crossover frequency</label><br>
+        <label><input type="radio" name="q16" value="b"> b) The subwoofer’s output level</label><br>
+        <label><input type="radio" name="q16" value="c"> c) Phase alignment</label><br>
+        <label><input type="radio" name="q16" value="d"> d) The LFE channel output</label>
+      </div>
+      
+      <!-- Section 6: Advanced Concepts -->
+      <div class="question">
+        <p>17. Why is room acoustics crucial when setting up a subwoofer?</p>
+        <label><input type="radio" name="q17" value="a"> a) It affects high-frequency response</label><br>
+        <label><input type="radio" name="q17" value="b"> b) It shapes bass clarity and prevents boominess</label><br>
+        <label><input type="radio" name="q17" value="c"> c) It only matters for main speakers</label><br>
+        <label><input type="radio" name="q17" value="d"> d) It helps with surround imaging</label>
+      </div>
+      <div class="question">
+        <p>18. A subwoofer with low distortion and tight bass is best for:</p>
+        <label><input type="radio" name="q18" value="a"> a) Action movies with heavy effects</label><br>
+        <label><input type="radio" name="q18" value="b"> b) Classical music with detailed low-end</label><br>
+        <label><input type="radio" name="q18" value="c"> c) Gaming sound effects</label><br>
+        <label><input type="radio" name="q18" value="d"> d) Podcasts and audiobooks</label>
+      </div>
+      <div class="question">
+        <p>19. What’s the benefit of using multiple subwoofers in one system?</p>
+        <label><input type="radio" name="q19" value="a"> a) Louder overall sound</label><br>
+        <label><input type="radio" name="q19" value="b"> b) Wider frequency response</label><br>
+        <label><input type="radio" name="q19" value="c"> c) Smoother and more even bass distribution</label><br>
+        <label><input type="radio" name="q19" value="d"> d) Improved high-frequency clarity</label>
+      </div>
+      <div class="question">
+        <p>20. A subwoofer’s frequency response of 25Hz–120Hz ±3dB means:</p>
+        <label><input type="radio" name="q20" value="a"> a) Bass output stays consistent within this range with minimal variation</label><br>
+        <label><input type="radio" name="q20" value="b"> b) The subwoofer only plays frequencies above 120Hz</label><br>
+        <label><input type="radio" name="q20" value="c"> c) The subwoofer distorts frequencies below 25Hz</label><br>
+        <label><input type="radio" name="q20" value="d"> d) The subwoofer has poor low-frequency performance</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+    
+    // Answer key for Chapter 7 Quiz
+    const answerKey = [
+      "b", // Q1
+      "c", // Q2
+      "c", // Q3
+      "b", // Q4
+      "c", // Q5
+      "b", // Q6
+      "c", // Q7
+      "b", // Q8
+      "b", // Q9
+      "b", // Q10
+      "b", // Q11
+      "b", // Q12
+      "b", // Q13
+      "c", // Q14
+      "c", // Q15
+      "b", // Q16
+      "b", // Q17
+      "b", // Q18
+      "c", // Q19
+      "a"  // Q20
+    ];
+    
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

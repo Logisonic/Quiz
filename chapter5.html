@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 5: DACs and Streamers</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 5 -->
+  <div id="contentView">
+    <h1>Chapter 5: DACs and Streamers — Pre-Quiz One-Pager</h1>
+    <h2>1. What is a DAC? (Digital-to-Analog Converter)</h2>
+    <p>A DAC converts digital audio signals (like those from streaming services, CDs, or your phone) into analog signals that your amplifier and speakers can play.</p>
+    <p>Without a good DAC, your system won’t deliver high-quality sound — even with great speakers and amps.</p>
+    <p><strong>Built-in vs. External DACs:</strong> Many devices (AVRs, smartphones) have built-in DACs, but external DACs often offer better sound quality by reducing noise and improving detail.</p>
+    
+    <h2>2. Why does a good DAC matter?</h2>
+    <ul>
+      <li><strong>Clarity and Detail:</strong> Higher-quality DACs offer clearer sound with more detail.</li>
+      <li><strong>Dynamic Range:</strong> A good DAC preserves quiet and loud sounds without distortion.</li>
+      <li><strong>Low Jitter:</strong> Reduces timing errors in digital audio playback, keeping the music smooth and accurate.</li>
+    </ul>
+    
+    <h2>3. What’s a Streamer?</h2>
+    <p>A streamer is a device that connects to online music services (like Spotify, Tidal, or Apple Music) and sends digital audio signals to your DAC or amplifier.</p>
+    <p>Streamers often support hi-res audio formats like FLAC, WAV, or MQA for better sound quality than Bluetooth or MP3.</p>
+    
+    <h2>4. Why not just use Bluetooth?</h2>
+    <ul>
+      <li><strong>Sound Quality:</strong> Bluetooth compresses audio, reducing detail. Streamers often use Wi-Fi or Ethernet for lossless, higher-quality audio.</li>
+      <li><strong>Stability:</strong> Streamers offer more stable connections and support higher bitrates and sample rates.</li>
+    </ul>
+    
+    <p>Review the above concepts carefully before taking the quiz below.</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) for Chapter 5 -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 5 Quiz: What is a DAC and Streamer?</h1>
+    <form id="quizForm">
+      <!-- Section 1: Understanding DACs -->
+      <div class="question">
+        <p>1. What is the primary function of a DAC (Digital-to-Analog Converter)?</p>
+        <label><input type="radio" name="q1" value="a"> a) Convert analog signals into digital data</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Enhance audio volume without distortion</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Convert digital audio data into an analog signal that speakers can play</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Synchronize audio and video signals</label>
+      </div>
+      <div class="question">
+        <p>2. Why can’t digital audio (like from Spotify or a CD) be played directly by speakers?</p>
+        <label><input type="radio" name="q2" value="a"> a) Speakers only understand analog signals</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Digital audio has too much interference</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Digital signals have lower power output</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Speakers require a separate amplifier for digital sources</label>
+      </div>
+      <div class="question">
+        <p>3. Which of the following devices usually has a built-in DAC?</p>
+        <label><input type="radio" name="q3" value="a"> a) Turntable</label><br>
+        <label><input type="radio" name="q3" value="b"> b) AV Receiver</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Passive speakers</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Power amplifier</label>
+      </div>
+      <div class="question">
+        <p>4. What does bit depth in a DAC determine?</p>
+        <label><input type="radio" name="q4" value="a"> a) The loudness of the audio signal</label><br>
+        <label><input type="radio" name="q4" value="b"> b) The number of frequency bands the DAC can process</label><br>
+        <label><input type="radio" name="q4" value="c"> c) The dynamic range and resolution of the sound</label><br>
+        <label><input type="radio" name="q4" value="d"> d) The impedance matching capability</label>
+      </div>
+      <div class="question">
+        <p>5. How does sample rate affect digital audio quality?</p>
+        <label><input type="radio" name="q5" value="a"> a) Higher sample rates capture more detail from the original sound wave</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Lower sample rates provide better bass response</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Sample rate controls the volume of the audio</label><br>
+        <label><input type="radio" name="q5" value="d"> d) It only affects video synchronization</label>
+      </div>
+      <div class="question">
+        <p>6. Which sample rate and bit depth combination is considered CD quality?</p>
+        <label><input type="radio" name="q6" value="a"> a) 24-bit / 96 kHz</label><br>
+        <label><input type="radio" name="q6" value="b"> b) 16-bit / 44.1 kHz</label><br>
+        <label><input type="radio" name="q6" value="c"> c) 32-bit / 192 kHz</label><br>
+        <label><input type="radio" name="q6" value="d"> d) 8-bit / 22 kHz</label>
+      </div>
+      <div class="question">
+        <p>7. What’s one advantage of using an external DAC over a built-in one?</p>
+        <label><input type="radio" name="q7" value="a"> a) Reduces the need for an amplifier</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Provides better sound quality by minimizing noise and interference</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Increases the number of audio channels available</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Adds wireless streaming capabilities</label>
+      </div>
+      <div class="question">
+        <p>8. Which of these is a sign of a poor-quality DAC?</p>
+        <label><input type="radio" name="q8" value="a"> a) Sharp and detailed treble response</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Consistent low-frequency performance</label><br>
+        <label><input type="radio" name="q8" value="c"> c) High levels of jitter and digital noise</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Accurate soundstage and imaging</label>
+      </div>
+      <div class="question">
+        <p>9. What is jitter in digital audio?</p>
+        <label><input type="radio" name="q9" value="a"> a) A type of distortion caused by overdriven speakers</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Timing errors in the digital-to-analog conversion process</label><br>
+        <label><input type="radio" name="q9" value="c"> c) A mismatch between amplifier and speaker impedance</label><br>
+        <label><input type="radio" name="q9" value="d"> d) A phase alignment issue in surround sound</label>
+      </div>
+      <div class="question">
+        <p>10. Why might you choose a DAC with balanced XLR outputs?</p>
+        <label><input type="radio" name="q10" value="a"> a) To increase the overall volume output</label><br>
+        <label><input type="radio" name="q10" value="b"> b) To reduce electrical interference and noise over long cable runs</label><br>
+        <label><input type="radio" name="q10" value="c"> c) To allow for multi-room audio playback</label><br>
+        <label><input type="radio" name="q10" value="d"> d) To connect directly to wireless speakers</label>
+      </div>
+      
+      <!-- Section 2: Understanding Streamers -->
+      <div class="question">
+        <p>11. What is an audio streamer’s main purpose?</p>
+        <label><input type="radio" name="q11" value="a"> a) Enhance speaker impedance</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Stream digital music from online sources or local servers to your audio system</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Convert analog signals into digital audio files</label><br>
+        <label><input type="radio" name="q11" value="d"> d) Synchronize audio and video signals</label>
+      </div>
+      <div class="question">
+        <p>12. Which of the following is a lossless audio streaming service?</p>
+        <label><input type="radio" name="q12" value="a"> a) Spotify</label><br>
+        <label><input type="radio" name="q12" value="b"> b) YouTube Music</label><br>
+        <label><input type="radio" name="q12" value="c"> c) TIDAL HiFi</label><br>
+        <label><input type="radio" name="q12" value="d"> d) SoundCloud</label>
+      </div>
+      <div class="question">
+        <p>13. Why is Wi-Fi often preferred over Bluetooth for high-quality audio streaming?</p>
+        <label><input type="radio" name="q13" value="a"> a) Wi-Fi consumes less power</label><br>
+        <label><input type="radio" name="q13" value="b"> b) Wi-Fi supports higher bitrates and lossless audio formats</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Bluetooth has better compatibility with AVRs</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Bluetooth allows for more multi-room setups</label>
+      </div>
+      <div class="question">
+        <p>14. What is Roon in the context of streaming audio?</p>
+        <label><input type="radio" name="q14" value="a"> a) A room correction software</label><br>
+        <label><input type="radio" name="q14" value="b"> b) A high-quality DAC brand</label><br>
+        <label><input type="radio" name="q14" value="c"> c) A music management and streaming platform for audiophiles</label><br>
+        <label><input type="radio" name="q14" value="d"> d) A digital signal processor (DSP)</label>
+      </div>
+      <div class="question">
+        <p>15. Which of these streaming protocols supports high-resolution audio?</p>
+        <label><input type="radio" name="q15" value="a"> a) AirPlay 2</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Spotify Connect</label><br>
+        <label><input type="radio" name="q15" value="c"> c) DLNA</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Chromecast Audio</label>
+      </div>
+      <div class="question">
+        <p>16. Why would someone use a dedicated streamer instead of just streaming from their phone?</p>
+        <label><input type="radio" name="q16" value="a"> a) To increase the loudness of the audio signal</label><br>
+        <label><input type="radio" name="q16" value="b"> b) To bypass phone-based compression and achieve higher audio fidelity</label><br>
+        <label><input type="radio" name="q16" value="c"> c) To allow Bluetooth connectivity to speakers</label><br>
+        <label><input type="radio" name="q16" value="d"> d) To avoid using external amplifiers</label>
+      </div>
+      <div class="question">
+        <p>17. What is MQA (Master Quality Authenticated) in streaming?</p>
+        <label><input type="radio" name="q17" value="a"> a) A high-efficiency amplifier class</label><br>
+        <label><input type="radio" name="q17" value="b"> b) A lossless compression format designed for high-resolution audio streaming</label><br>
+        <label><input type="radio" name="q17" value="c"> c) A surround sound codec for home theater systems</label><br>
+        <label><input type="radio" name="q17" value="d"> d) A method of matching impedance between amplifiers and speakers</label>
+      </div>
+      <div class="question">
+        <p>18. Which of the following devices is most likely to include a built-in streamer?</p>
+        <label><input type="radio" name="q18" value="a"> a) Power amplifier</label><br>
+        <label><input type="radio" name="q18" value="b"> b) DAC-only devices</label><br>
+        <label><input type="radio" name="q18" value="c"> c) Network-enabled AVRs</label><br>
+        <label><input type="radio" name="q18" value="d"> d) Passive bookshelf speakers</label>
+      </div>
+      <div class="question">
+        <p>19. If you experience audio dropouts while streaming high-res audio over Wi-Fi, what’s the most likely cause?</p>
+        <label><input type="radio" name="q19" value="a"> a) Incompatible speaker impedance</label><br>
+        <label><input type="radio" name="q19" value="b"> b) Digital-to-analog conversion errors</label><br>
+        <label><input type="radio" name="q19" value="c"> c) Insufficient network bandwidth or signal strength</label><br>
+        <label><input type="radio" name="q19" value="d"> d) Low amplifier power output</label>
+      </div>
+      <div class="question">
+        <p>20. Why is gapless playback important in audio streaming?</p>
+        <label><input type="radio" name="q20" value="a"> a) It ensures no loss of audio quality between tracks</label><br>
+        <label><input type="radio" name="q20" value="b"> b) It prevents distortion when switching songs</label><br>
+        <label><input type="radio" name="q20" value="c"> c) It allows albums or live performances to play without pauses between tracks</label><br>
+        <label><input type="radio" name="q20" value="d"> d) It synchronizes audio with video content</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+    
+    // Answer key for Chapter 5 Quiz
+    const answerKey = [
+      "c", // Q1
+      "a", // Q2
+      "b", // Q3
+      "c", // Q4
+      "a", // Q5
+      "b", // Q6
+      "b", // Q7
+      "c", // Q8
+      "b", // Q9
+      "b", // Q10
+      "b", // Q11
+      "c", // Q12
+      "b", // Q13
+      "c", // Q14
+      "d", // Q15
+      "b", // Q16
+      "b", // Q17
+      "c", // Q18
+      "c", // Q19
+      "c"  // Q20
+    ];
+    
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

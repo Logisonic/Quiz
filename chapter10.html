@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 10: In-depth Amplifiers</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 10 -->
+  <div id="contentView">
+    <h1>Chapter 10: In-depth Amplifiers — Pre-Quiz One-Pager</h1>
+    <p>This chapter takes a closer look at amplifiers. You will learn about:</p>
+    <ul>
+      <li><strong>Amplifier Classes:</strong> Differences between Class A, AB, D, and G in terms of efficiency, distortion, and heat generation.</li>
+      <li><strong>Headroom &amp; Damping Factor:</strong> How these affect dynamic performance and bass control.</li>
+      <li><strong>Impedance Matching:</strong> How an amplifier’s current capability and impedance matching impact overall performance.</li>
+    </ul>
+    <p>These concepts are essential for choosing the right amplifier to match your speakers and listening preferences.</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View for Chapter 10 (initially hidden) -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 10 Quiz: In-depth Amplifiers</h1>
+    <form id="quizForm">
+      <!-- Section 1: Amplifier Classes -->
+      <div class="question">
+        <p>1. What is a Class A amplifier known for?</p>
+        <label><input type="radio" name="q1" value="a"> a) Efficiency</label><br>
+        <label><input type="radio" name="q1" value="b"> b) High fidelity</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Low cost</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Compact design</label>
+      </div>
+      <div class="question">
+        <p>2. Which amplifier class is most efficient?</p>
+        <label><input type="radio" name="q2" value="a"> a) Class A</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Class AB</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Class D</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Class G</label>
+      </div>
+      <div class="question">
+        <p>3. Class AB amplifiers are commonly used in HiFi because:</p>
+        <label><input type="radio" name="q3" value="a"> a) They are the most efficient</label><br>
+        <label><input type="radio" name="q3" value="b"> b) They offer a good balance of sound quality and efficiency</label><br>
+        <label><input type="radio" name="q3" value="c"> c) They have the lowest total harmonic distortion</label><br>
+        <label><input type="radio" name="q3" value="d"> d) They are the most cost-effective</label>
+      </div>
+      <div class="question">
+        <p>4. Why are Class D amplifiers popular in subwoofers and portable speakers?</p>
+        <label><input type="radio" name="q4" value="a"> a) They produce the highest sound quality</label><br>
+        <label><input type="radio" name="q4" value="b"> b) They have very high efficiency and generate little heat</label><br>
+        <label><input type="radio" name="q4" value="c"> c) They require the least power to operate</label><br>
+        <label><input type="radio" name="q4" value="d"> d) They are designed for high-impedance speakers</label>
+      </div>
+      <div class="question">
+        <p>5. Class G and H amplifiers are known for:</p>
+        <label><input type="radio" name="q5" value="a"> a) Digital sound processing</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Variable power supply rails for improved efficiency</label><br>
+        <label><input type="radio" name="q5" value="c"> c) High total harmonic distortion</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Compatibility with tube amplifiers</label>
+      </div>
+      
+      <!-- Section 2: Headroom and Damping Factor -->
+      <div class="question">
+        <p>6. What is headroom in an amplifier?</p>
+        <label><input type="radio" name="q6" value="a"> a) The ability to handle sudden volume peaks</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Power supply efficiency</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Digital processing capability</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Speaker impedance matching</label>
+      </div>
+      <div class="question">
+        <p>7. Why is headroom important in audio playback?</p>
+        <label><input type="radio" name="q7" value="a"> a) It increases power efficiency</label><br>
+        <label><input type="radio" name="q7" value="b"> b) It prevents clipping and distortion during dynamic peaks</label><br>
+        <label><input type="radio" name="q7" value="c"> c) It improves impedance matching</label><br>
+        <label><input type="radio" name="q7" value="d"> d) It enhances midrange clarity</label>
+      </div>
+      <div class="question">
+        <p>8. How does damping factor affect bass control?</p>
+        <label><input type="radio" name="q8" value="a"> a) Increases distortion</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Improves bass accuracy</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Decreases amplifier power</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Enhances soundstage depth</label>
+      </div>
+      <div class="question">
+        <p>9. A high damping factor is typically beneficial for:</p>
+        <label><input type="radio" name="q9" value="a"> a) Tight and accurate bass response</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Enhanced treble clarity</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Reduced amplifier power output</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Increased midrange detail</label>
+      </div>
+      <div class="question">
+        <p>10. Which amplifier class generally has the highest damping factor?</p>
+        <label><input type="radio" name="q10" value="a"> a) Class A</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Class AB</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Class D</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Class G</label>
+      </div>
+      
+      <!-- Section 3: Impedance Matching -->
+      <div class="question">
+        <p>11. Why is impedance matching important?</p>
+        <label><input type="radio" name="q11" value="a"> a) It maximizes power transfer</label><br>
+        <label><input type="radio" name="q11" value="b"> b) It enhances soundstage</label><br>
+        <label><input type="radio" name="q11" value="c"> c) It reduces signal noise</label><br>
+        <label><input type="radio" name="q11" value="d"> d) It boosts amplifier wattage</label>
+      </div>
+      <div class="question">
+        <p>12. What happens if an amplifier is connected to a speaker with a lower impedance than its rating?</p>
+        <label><input type="radio" name="q12" value="a"> a) The amplifier delivers less power</label><br>
+        <label><input type="radio" name="q12" value="b"> b) The amplifier may overheat or distort</label><br>
+        <label><input type="radio" name="q12" value="c"> c) The speaker produces no sound</label><br>
+        <label><input type="radio" name="q12" value="d"> d) The impedance mismatch boosts treble clarity</label>
+      </div>
+      <div class="question">
+        <p>13. Which amplifier is best suited for low-impedance speakers?</p>
+        <label><input type="radio" name="q13" value="a"> a) Tube amplifier with high output impedance</label><br>
+        <label><input type="radio" name="q13" value="b"> b) High-current Class AB or Class D amplifier</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Low-powered Class A amplifier</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Portable Bluetooth amplifier</label>
+      </div>
+      <div class="question">
+        <p>14. Impedance dips in a speaker’s response curve require an amplifier with:</p>
+        <label><input type="radio" name="q14" value="a"> a) High sensitivity</label><br>
+        <label><input type="radio" name="q14" value="b"> b) High current capability</label><br>
+        <label><input type="radio" name="q14" value="c"> c) High total harmonic distortion</label><br>
+        <label><input type="radio" name="q14" value="d"> d) Low damping factor</label>
+      </div>
+      <div class="question">
+        <p>15. When matching amplifiers and speakers, you should:</p>
+        <label><input type="radio" name="q15" value="a"> a) Match the speaker’s impedance curve with the amplifier’s power capability</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Only consider the speaker’s sensitivity rating</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Use any amplifier, as impedance doesn’t matter</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Match speaker impedance to room acoustics</label>
+      </div>
+      
+      <!-- Section 4: Total Harmonic Distortion (THD) -->
+      <div class="question">
+        <p>16. What is Total Harmonic Distortion (THD)?</p>
+        <label><input type="radio" name="q16" value="a"> a) A measure of signal distortion</label><br>
+        <label><input type="radio" name="q16" value="b"> b) An increase in power output</label><br>
+        <label><input type="radio" name="q16" value="c"> c) A reduction in impedance</label><br>
+        <label><input type="radio" name="q16" value="d"> d) A boost in bass response</label>
+      </div>
+      <div class="question">
+        <p>17. Why is low THD important in audio playback?</p>
+        <label><input type="radio" name="q17" value="a"> a) It enhances soundstage depth</label><br>
+        <label><input type="radio" name="q17" value="b"> b) It ensures cleaner and more accurate sound reproduction</label><br>
+        <label><input type="radio" name="q17" value="c"> c) It increases amplifier power efficiency</label><br>
+        <label><input type="radio" name="q17" value="d"> d) It reduces speaker impedance</label>
+      </div>
+      <div class="question">
+        <p>18. Which amplifier class typically has the lowest THD?</p>
+        <label><input type="radio" name="q18" value="a"> a) Class A</label><br>
+        <label><input type="radio" name="q18" value="b"> b) Class D</label><br>
+        <label><input type="radio" name="q18" value="c"> c) Class AB</label><br>
+        <label><input type="radio" name="q18" value="d"> d) Class G</label>
+      </div>
+      <div class="question">
+        <p>19. High THD is most likely to affect which frequency range?</p>
+        <label><input type="radio" name="q19" value="a"> a) Sub-bass (20-60 Hz)</label><br>
+        <label><input type="radio" name="q19" value="b"> b) Midrange (500 Hz - 2 kHz)</label><br>
+        <label><input type="radio" name="q19" value="c"> c) Treble (2 kHz - 20 kHz)</label><br>
+        <label><input type="radio" name="q19" value="d"> d) Ultrasonic frequencies (above 20 kHz)</label>
+      </div>
+      <div class="question">
+        <p>20. Which of the following helps minimize THD?</p>
+        <label><input type="radio" name="q20" value="a"> a) Using high-quality components in the amplifier design</label><br>
+        <label><input type="radio" name="q20" value="b"> b) Increasing amplifier power output</label><br>
+        <label><input type="radio" name="q20" value="c"> c) Placing speakers closer to walls</label><br>
+        <label><input type="radio" name="q20" value="d"> d) Lowering the speaker’s impedance</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+    
+    // Answer key for Chapter 10 Quiz
+    const answerKey = [
+      "b", // Q1
+      "c", // Q2
+      "b", // Q3
+      "b", // Q4
+      "b", // Q5
+      "a", // Q6
+      "b", // Q7
+      "b", // Q8
+      "a", // Q9
+      "c", // Q10
+      "a", // Q11
+      "b", // Q12
+      "b", // Q13
+      "b", // Q14
+      "a", // Q15
+      "a", // Q16
+      "b", // Q17
+      "a", // Q18
+      "c", // Q19
+      "a"  // Q20
+    ];
+    
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 1: Basics of an Audio System</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) -->
+  <div id="contentView">
+    <h1>Chapter 1: Basics of an Audio System</h1>
+    <p>An audio system consists of multiple components working together to reproduce sound accurately. Understanding these components is essential for selecting the right setup for music listening, home theater, or professional audio applications.</p>
+    
+    <h2>Key Components of an Audio System</h2>
+    <ul>
+      <li><strong>Source:</strong> The device that provides the audio signal (e.g., turntable, CD player, streaming device, or smartphone).</li>
+      <li><strong>Amplifier:</strong> Boosts the weak signal to drive speakers.
+        <ul>
+          <li>Stereo Amplifier – For two-channel (left &amp; right) audio.</li>
+          <li>AV Receiver (AVR) – For multi-channel audio and video processing in home theaters.</li>
+        </ul>
+      </li>
+      <li><strong>Speakers:</strong> Convert electrical signals into sound waves (various types including bookshelf, floorstanding, center, and surround speakers).</li>
+      <li><strong>Subwoofer:</strong> Dedicated to low frequencies (bass), used in both stereo and home theater setups.</li>
+    </ul>
+
+    <h2>Stereo vs. Home Theater Systems</h2>
+    <p><strong>Stereo (2.0 or 2.1):</strong> Two speakers (left and right) plus an optional subwoofer – ideal for music listening.</p>
+    <p><strong>Home Theater (5.1, 7.1, Atmos, etc.):</strong> Uses multiple speakers (including a center channel, surround speakers, and a subwoofer) for an immersive cinematic experience.</p>
+
+    <h2>Passive vs. Powered Speakers</h2>
+    <p><strong>Passive Speakers:</strong> Require an external amplifier.</p>
+    <p><strong>Powered (Active) Speakers:</strong> Have built-in amplifiers and connect directly to a source.</p>
+
+    <h2>Connectivity and Signal Flow</h2>
+    <p><strong>Analog:</strong> RCA, 3.5mm, speaker wire.</p>
+    <p><strong>Digital:</strong> Optical, HDMI ARC, USB, Bluetooth/Wi‑Fi.</p>
+
+    <h2>Achieving the Ideal Audio Experience</h2>
+    <p>A balanced system combines power, speaker quality, and room acoustics. Review these concepts, then click the button below to take the quiz.</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 1 Quiz: Components of an Audio System</h1>
+    <form id="quizForm">
+      <!-- Section 1: Basic System Components -->
+      <div class="question">
+        <p>1. What is the most basic setup needed for a functional audio system?</p>
+        <label><input type="radio" name="q1" value="a"> a) A speaker and a subwoofer</label><br>
+        <label><input type="radio" name="q1" value="b"> b) An amplifier and a DAC</label><br>
+        <label><input type="radio" name="q1" value="c"> c) A source and a speaker</label><br>
+        <label><input type="radio" name="q1" value="d"> d) A source, an amplifier, and a speaker</label>
+      </div>
+      <div class="question">
+        <p>2. What is the role of a source in an audio system?</p>
+        <label><input type="radio" name="q2" value="a"> a) To amplify the sound signal</label><br>
+        <label><input type="radio" name="q2" value="b"> b) To generate the audio signal</label><br>
+        <label><input type="radio" name="q2" value="c"> c) To convert digital signals into analog</label><br>
+        <label><input type="radio" name="q2" value="d"> d) To increase the bass response</label>
+      </div>
+      <div class="question">
+        <p>3. Which of these is an example of an audio source?</p>
+        <label><input type="radio" name="q3" value="a"> a) AV receiver</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Turntable</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Passive speaker</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Power amplifier</label>
+      </div>
+
+      <!-- Section 2: Amplification and Signal Processing -->
+      <div class="question">
+        <p>4. Why do passive speakers need an amplifier?</p>
+        <label><input type="radio" name="q4" value="a"> a) Because they cannot generate sound without one</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Because they only receive a weak signal from the source</label><br>
+        <label><input type="radio" name="q4" value="c"> c) Because they need digital signal processing</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Because they cannot work with surround sound formats</label>
+      </div>
+      <div class="question">
+        <p>5. What is the difference between an integrated amplifier and a power amplifier?</p>
+        <label><input type="radio" name="q5" value="a"> a) An integrated amplifier includes a preamp, while a power amplifier does not</label><br>
+        <label><input type="radio" name="q5" value="b"> b) A power amplifier has a built-in DAC, while an integrated amp does not</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Integrated amplifiers are only used for home theater setups</label><br>
+        <label><input type="radio" name="q5" value="d"> d) There is no real difference</label>
+      </div>
+      <div class="question">
+        <p>6. A customer has powered speakers. Do they still need an external amplifier?</p>
+        <label><input type="radio" name="q6" value="a"> a) Yes, because all speakers require external amplification</label><br>
+        <label><input type="radio" name="q6" value="b"> b) No, because powered speakers have built-in amplification</label><br>
+        <label><input type="radio" name="q6" value="c"> c) No, because powered speakers can only be connected via Bluetooth</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Yes, because powered speakers still need a separate DAC</label>
+      </div>
+
+      <!-- Section 3: Speaker Types and Configurations -->
+      <div class="question">
+        <p>7. What is the key difference between bookshelf and floorstanding speakers?</p>
+        <label><input type="radio" name="q7" value="a"> a) Floorstanding speakers always have better sound quality</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Bookshelf speakers are passive, while floorstanding speakers are active</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Floorstanding speakers generally have more drivers and better bass response</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Bookshelf speakers cannot be used in stereo setups</label>
+      </div>
+      <div class="question">
+        <p>8. Which of these is NOT a type of speaker used in a home theater system?</p>
+        <label><input type="radio" name="q8" value="a"> a) Center speaker</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Surround speaker</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Subwoofer</label><br>
+        <label><input type="radio" name="q8" value="d"> d) DAC</label>
+      </div>
+      <div class="question">
+        <p>9. What is the function of a center speaker in a surround sound setup?</p>
+        <label><input type="radio" name="q9" value="a"> a) To provide deep bass for action scenes</label><br>
+        <label><input type="radio" name="q9" value="b"> b) To reproduce most of the dialogue and vocals</label><br>
+        <label><input type="radio" name="q9" value="c"> c) To create rear surround effects</label><br>
+        <label><input type="radio" name="q9" value="d"> d) To handle high frequencies only</label>
+      </div>
+      <div class="question">
+        <p>10. In a 5.1 home theater setup, where should the surround speakers be placed?</p>
+        <label><input type="radio" name="q10" value="a"> a) In front of the listener, next to the TV</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Behind the listener, at ear level</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Directly above the listener</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Below the TV</label>
+      </div>
+
+      <!-- Section 4: AV Receivers and Multi-Channel Audio -->
+      <div class="question">
+        <p>11. What is the primary purpose of an AV receiver (AVR)?</p>
+        <label><input type="radio" name="q11" value="a"> a) To amplify stereo signals only</label><br>
+        <label><input type="radio" name="q11" value="b"> b) To process and amplify multi-channel audio signals</label><br>
+        <label><input type="radio" name="q11" value="c"> c) To function as a dedicated music player</label><br>
+        <label><input type="radio" name="q11" value="d"> d) To work only with wireless speakers</label>
+      </div>
+      <div class="question">
+        <p>12. Which of the following is a key feature of an AV receiver that a stereo amplifier typically lacks?</p>
+        <label><input type="radio" name="q12" value="a"> a) HDMI inputs for video and audio</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Support for passive speakers</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Bluetooth connectivity</label><br>
+        <label><input type="radio" name="q12" value="d"> d) A built-in DAC</label>
+      </div>
+      <div class="question">
+        <p>13. A customer wants to build an entertainment system and asks if they need an AV receiver. What should you ask them to determine the right setup?</p>
+        <label><input type="radio" name="q13" value="a"> a) Do you primarily listen to music or watch movies?</label><br>
+        <label><input type="radio" name="q13" value="b"> b) Do you need wireless speakers?</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Do you want a single speaker system?</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Do you already have an amplifier?</label>
+      </div>
+
+      <!-- Section 5: Subwoofers and Low-Frequency Management -->
+      <div class="question">
+        <p>14. What is the primary function of a subwoofer in an audio system?</p>
+        <label><input type="radio" name="q14" value="a"> a) To enhance the midrange clarity</label><br>
+        <label><input type="radio" name="q14" value="b"> b) To produce deep bass frequencies</label><br>
+        <label><input type="radio" name="q14" value="c"> c) To replace the center speaker</label><br>
+        <label><input type="radio" name="q14" value="d"> d) To increase the overall volume of the system</label>
+      </div>
+      <div class="question">
+        <p>15. A customer is confused about whether they need a subwoofer for their stereo setup. What would be a good follow-up question?</p>
+        <label><input type="radio" name="q15" value="a"> a) Do you listen to a lot of bass-heavy music?</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Do you already have a DAC?</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Do you watch movies in surround sound?</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Do you use Bluetooth speakers?</label>
+      </div>
+
+      <!-- Section 6: Connectivity and Integration -->
+      <div class="question">
+        <p>16. Which of these is a common way to connect an audio source to an amplifier?</p>
+        <label><input type="radio" name="q16" value="a"> a) USB-C</label><br>
+        <label><input type="radio" name="q16" value="b"> b) RCA cables</label><br>
+        <label><input type="radio" name="q16" value="c"> c) HDMI ARC</label><br>
+        <label><input type="radio" name="q16" value="d"> d) Optical mouse</label>
+      </div>
+      <div class="question">
+        <p>17. A customer has a soundbar and a pair of bookshelf speakers. They ask if they can use both together in a home theater setup. What would be your response?</p>
+        <label><input type="radio" name="q17" value="a"> a) Yes, but they need an AV receiver to integrate them</label><br>
+        <label><input type="radio" name="q17" value="b"> b) No, because soundbars are designed to replace speakers, not complement them</label><br>
+        <label><input type="radio" name="q17" value="c"> c) Yes, but only if they are from the same brand</label><br>
+        <label><input type="radio" name="q17" value="d"> d) No, because bookshelf speakers cannot produce surround sound</label>
+      </div>
+
+      <!-- Section 7: Real-World Scenarios -->
+      <div class="question">
+        <p>18. A customer says they have a stereo amplifier and want to expand to a 5.1 setup. What is the main limitation of their current setup?</p>
+        <label><input type="radio" name="q18" value="a"> a) Stereo amplifiers do not support multi-channel audio</label><br>
+        <label><input type="radio" name="q18" value="b"> b) Stereo amplifiers cannot connect to speakers</label><br>
+        <label><input type="radio" name="q18" value="c"> c) Stereo amplifiers have lower power output</label><br>
+        <label><input type="radio" name="q18" value="d"> d) Stereo amplifiers lack volume control</label>
+      </div>
+      <div class="question">
+        <p>19. A friend tells you they want a compact, all-in-one solution for their living room but still want decent sound quality. Which of these would be the most suitable recommendation?</p>
+        <label><input type="radio" name="q19" value="a"> a) A stereo amplifier and passive speakers</label><br>
+        <label><input type="radio" name="q19" value="b"> b) A high-end AV receiver</label><br>
+        <label><input type="radio" name="q19" value="c"> c) A powered speaker system</label><br>
+        <label><input type="radio" name="q19" value="d"> d) A full home theater system with a subwoofer</label>
+      </div>
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      var content = document.getElementById("contentView");
+      var quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear any previous feedback when toggling
+      document.getElementById("quizFeedback").innerHTML = "";
+      // Optionally, reset the form (if desired)
+      document.getElementById("quizForm").reset();
+    }
+
+    // Answer key for Chapter 1 Quiz
+    const answerKey = [
+      "d", // Q1
+      "b", // Q2
+      "b", // Q3
+      "b", // Q4
+      "a", // Q5
+      "b", // Q6
+      "c", // Q7
+      "d", // Q8
+      "b", // Q9
+      "b", // Q10
+      "b", // Q11
+      "a", // Q12
+      "a", // Q13
+      "b", // Q14
+      "a", // Q15
+      "b", // Q16
+      "a", // Q17
+      "a", // Q18
+      "c"  // Q19
+    ];
+
+    // Function to grade the quiz
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += "<p>Question " + (i + 1) + ": <span class='correct'>Correct</span></p>";
+        } else {
+          feedbackHtml += "<p>Question " + (i + 1) + ": <span class='incorrect'>Incorrect</span>. Correct answer: " + answerKey[i].toUpperCase() + "</p>";
+        }
+      }
+      feedbackHtml += "<p><strong>Your score: " + score + " out of " + total + "</strong></p>";
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

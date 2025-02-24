@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 4: What is an Amplifier/AVR?</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 4 -->
+  <div id="contentView">
+    <h1>Chapter 4: What is an Amplifier/AVR?</h1>
+    <p>An amplifier (amp) boosts a weak audio signal to a level strong enough to drive speakers. An AVR (Audio/Video Receiver) is an amplifier designed for home theater, with extra features like surround sound decoding and multiple inputs.</p>
+    
+    <h2>1. Amplifier Components</h2>
+    <ul>
+      <li><strong>Power Supply:</strong> Converts AC electricity into DC power for amplification.</li>
+      <li><strong>Preamp:</strong> Processes and controls input signals (volume, EQ, source selection).</li>
+      <li><strong>Power Amp:</strong> Amplifies the signal to drive speakers.</li>
+      <li><strong>Speaker Terminals:</strong> Connects the amp to speakers (binding posts or banana plugs).</li>
+    </ul>
+    
+    <h2>2. Key Amplifier Properties</h2>
+    <ul>
+      <li><strong>Wattage (Power Output, W RMS):</strong> How much power the amp delivers continuously per channel.<br>
+          <em>Example:</em> 50W RMS per channel into 8Ω means each channel delivers 50W at a standard impedance.</li>
+      <li><strong>Total Harmonic Distortion (THD%):</strong> Measures signal purity. Lower is better (ideally below 0.1%).</li>
+      <li><strong>Damping Factor:</strong> The amp’s ability to control speaker movement, affecting bass tightness. Higher is better.</li>
+      <li><strong>Signal-to-Noise Ratio (SNR, dB):</strong> How much louder the signal is compared to noise. Higher is better (above 90 dB).</li>
+    </ul>
+    
+    <h2>3. Amplifier Classes</h2>
+    <p>Amplifiers operate in different classes, affecting efficiency and sound quality:</p>
+    <ul>
+      <li><strong>Class A:</strong> Purest sound but inefficient and hot.</li>
+      <li><strong>Class AB:</strong> A balance of quality and efficiency (common in HiFi).</li>
+      <li><strong>Class D:</strong> Very efficient, smaller, and cooler (common in modern AVRs and subwoofers).</li>
+    </ul>
+    
+    <h2>4. AVR Features for Home Theater</h2>
+    <ul>
+      <li><strong>Channels:</strong> Determines speaker configuration (e.g., 5.1, 7.1, 9.2).</li>
+      <li><strong>Dolby/DTS Decoding:</strong> Supports surround sound formats like Dolby Atmos, DTS:X.</li>
+      <li><strong>Room Calibration:</strong> (e.g., Audyssey, YPAO, Dirac Live) Automatically adjusts settings for better sound.</li>
+      <li><strong>HDMI &amp; Connectivity:</strong> Supports 4K, HDR, ARC, eARC for modern home theater setups.</li>
+    </ul>
+    
+    <h2>5. Matching Amplifiers and Speakers</h2>
+    <p>An amp must be matched properly to the speakers for optimal performance—later chapters will cover impedance matching, power requirements, and amplifier/speaker compatibility in more detail!</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) for Chapter 4 -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 4 Quiz: What is an Amplifier/AVR?</h1>
+    <form id="quizForm">
+      <!-- Section 1: Basic Concepts -->
+      <div class="question">
+        <p>1. What is the main function of an amplifier?</p>
+        <label><input type="radio" name="q1" value="a"> a) Convert sound waves into electrical signals</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Boost an audio signal to drive speakers</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Store and process digital audio files</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Generate sound on its own</label>
+      </div>
+      <div class="question">
+        <p>2. What does an AVR (Audio/Video Receiver) do that a stereo amplifier does not?</p>
+        <label><input type="radio" name="q2" value="a"> a) Provide power to speakers</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Play music from CDs</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Process surround sound formats</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Reduce distortion</label>
+      </div>
+      <div class="question">
+        <p>3. What is RMS power rating in an amplifier?</p>
+        <label><input type="radio" name="q3" value="a"> a) The maximum short burst power it can deliver</label><br>
+        <label><input type="radio" name="q3" value="b"> b) The power an amplifier can deliver continuously</label><br>
+        <label><input type="radio" name="q3" value="c"> c) The amplifier’s total energy efficiency</label><br>
+        <label><input type="radio" name="q3" value="d"> d) The impedance rating</label>
+      </div>
+      <div class="question">
+        <p>4. Why does Total Harmonic Distortion (THD%) matter in an amplifier?</p>
+        <label><input type="radio" name="q4" value="a"> a) It measures efficiency</label><br>
+        <label><input type="radio" name="q4" value="b"> b) It indicates how much the sound is distorted</label><br>
+        <label><input type="radio" name="q4" value="c"> c) It determines the frequency response</label><br>
+        <label><input type="radio" name="q4" value="d"> d) It shows how many channels the amp has</label>
+      </div>
+      <div class="question">
+        <p>5. A higher damping factor in an amplifier means:</p>
+        <label><input type="radio" name="q5" value="a"> a) It controls speaker movement better, resulting in tighter bass</label><br>
+        <label><input type="radio" name="q5" value="b"> b) It reduces power consumption</label><br>
+        <label><input type="radio" name="q5" value="c"> c) It increases sensitivity</label><br>
+        <label><input type="radio" name="q5" value="d"> d) It enhances midrange clarity</label>
+      </div>
+      
+      <!-- Section 2: Amplifier and AVR Properties -->
+      <div class="question">
+        <p>6. What does impedance matching between an amplifier and a speaker help prevent?</p>
+        <label><input type="radio" name="q6" value="a"> a) Speaker damage and amplifier overheating</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Loss of bass response</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Increased total harmonic distortion</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Reduced stereo imaging</label>
+      </div>
+      <div class="question">
+        <p>7. If an amplifier is rated 100W per channel at 8Ω, what happens if you connect 4Ω speakers?</p>
+        <label><input type="radio" name="q7" value="a"> a) The amplifier may deliver more power and overheat</label><br>
+        <label><input type="radio" name="q7" value="b"> b) The sound will be quieter</label><br>
+        <label><input type="radio" name="q7" value="c"> c) The amplifier will automatically adjust its impedance</label><br>
+        <label><input type="radio" name="q7" value="d"> d) The amplifier will shut down completely</label>
+      </div>
+      <div class="question">
+        <p>8. What is the difference between Class A and Class D amplifiers?</p>
+        <label><input type="radio" name="q8" value="a"> a) Class A is more efficient than Class D</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Class D amplifiers generate more heat</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Class A operates continuously, while Class D is more power-efficient</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Class D amplifiers are only used for subwoofers</label>
+      </div>
+      <div class="question">
+        <p>9. Why do some AVRs have pre-out connections?</p>
+        <label><input type="radio" name="q9" value="a"> a) To connect additional passive speakers</label><br>
+        <label><input type="radio" name="q9" value="b"> b) To allow external amplifiers to power certain channels</label><br>
+        <label><input type="radio" name="q9" value="c"> c) To enhance built-in DSP processing</label><br>
+        <label><input type="radio" name="q9" value="d"> d) To connect to an active subwoofer</label>
+      </div>
+      <div class="question">
+        <p>10. What is a bridged amplifier mode used for?</p>
+        <label><input type="radio" name="q10" value="a"> a) Combining two amplifier channels into one for increased power output</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Connecting multiple speakers to one amplifier channel</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Reducing the amplifier’s power consumption</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Improving surround sound processing</label>
+      </div>
+      
+      <!-- Section 3: Amplifier Types and Power Handling -->
+      <div class="question">
+        <p>11. Which amplifier class is most commonly used in home theater AVRs due to efficiency?</p>
+        <label><input type="radio" name="q11" value="a"> a) Class A</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Class AB</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Class D</label><br>
+        <label><input type="radio" name="q11" value="d"> d) Class G</label>
+      </div>
+      <div class="question">
+        <p>12. What happens if an amplifier is underpowered for a speaker?</p>
+        <label><input type="radio" name="q12" value="a"> a) The speaker will produce no sound</label><br>
+        <label><input type="radio" name="q12" value="b"> b) The amplifier may clip, causing distortion and potential damage</label><br>
+        <label><input type="radio" name="q12" value="c"> c) The amplifier will adjust its output automatically</label><br>
+        <label><input type="radio" name="q12" value="d"> d) The speaker will work fine at any volume</label>
+      </div>
+      <div class="question">
+        <p>13. Which of the following is a benefit of using an external power amplifier instead of relying on an AVR’s built-in amp?</p>
+        <label><input type="radio" name="q13" value="a"> a) Reduced distortion and better dynamic range</label><br>
+        <label><input type="radio" name="q13" value="b"> b) More HDMI inputs</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Improved wireless connectivity</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Ability to decode more surround formats</label>
+      </div>
+      <div class="question">
+        <p>14. A high signal-to-noise ratio (SNR) in an amplifier means:</p>
+        <label><input type="radio" name="q14" value="a"> a) More distortion is present</label><br>
+        <label><input type="radio" name="q14" value="b"> b) The amplifier produces cleaner sound with less background noise</label><br>
+        <label><input type="radio" name="q14" value="c"> c) The amplifier has a lower power output</label><br>
+        <label><input type="radio" name="q14" value="d"> d) The amplifier supports more channels</label>
+      </div>
+      <div class="question">
+        <p>15. Why do some high-end amplifiers have balanced XLR inputs instead of RCA?</p>
+        <label><input type="radio" name="q15" value="a"> a) To provide a higher voltage signal</label><br>
+        <label><input type="radio" name="q15" value="b"> b) To reduce noise and interference over long cable runs</label><br>
+        <label><input type="radio" name="q15" value="c"> c) To enable compatibility with all AVRs</label><br>
+        <label><input type="radio" name="q15" value="d"> d) To allow direct connection to speakers</label>
+      </div>
+      
+      <!-- Section 4: Surround Sound Features and Real-World Applications -->
+      <div class="question">
+        <p>16. What is the main advantage of an AVR supporting Dolby Atmos?</p>
+        <label><input type="radio" name="q16" value="a"> a) It adds overhead height channels for a more immersive 3D sound experience</label><br>
+        <label><input type="radio" name="q16" value="b"> b) It improves stereo imaging</label><br>
+        <label><input type="radio" name="q16" value="c"> c) It increases bass output</label><br>
+        <label><input type="radio" name="q16" value="d"> d) It reduces the need for a subwoofer</label>
+      </div>
+      <div class="question">
+        <p>17. What is room correction software (e.g., Audyssey, Dirac, YPAO) used for in an AVR?</p>
+        <label><input type="radio" name="q17" value="a"> a) Adjusting the room’s lighting for optimal listening</label><br>
+        <label><input type="radio" name="q17" value="b"> b) Analyzing and adjusting speaker output to compensate for room acoustics</label><br>
+        <label><input type="radio" name="q17" value="c"> c) Controlling the volume of different audio sources</label><br>
+        <label><input type="radio" name="q17" value="d"> d) Measuring and displaying total harmonic distortion</label>
+      </div>
+      <div class="question">
+        <p>18. Which AVR feature allows sound from a TV’s built-in apps to be played through external speakers without extra cables?</p>
+        <label><input type="radio" name="q18" value="a"> a) ARC (Audio Return Channel)</label><br>
+        <label><input type="radio" name="q18" value="b"> b) HDMI Passthrough</label><br>
+        <label><input type="radio" name="q18" value="c"> c) DSP Upscaling</label><br>
+        <label><input type="radio" name="q18" value="d"> d) Crossover Adjustment</label>
+      </div>
+      <div class="question">
+        <p>19. Why do some high-end AVRs have independent power supplies for each channel?</p>
+        <label><input type="radio" name="q19" value="a"> a) To ensure consistent power delivery and avoid channel interference</label><br>
+        <label><input type="radio" name="q19" value="b"> b) To allow for multiple speaker connections</label><br>
+        <label><input type="radio" name="q19" value="c"> c) To increase the amplifier’s impedance range</label><br>
+        <label><input type="radio" name="q19" value="d"> d) To improve wireless connectivity</label>
+      </div>
+      <div class="question">
+        <p>20. Which speaker configuration is typically associated with an AVR that supports 7.1 channels?</p>
+        <label><input type="radio" name="q20" value="a"> a) Front left, front right, center, subwoofer, surround left, surround right</label><br>
+        <label><input type="radio" name="q20" value="b"> b) The same as 5.1 but with additional rear surround speakers</label><br>
+        <label><input type="radio" name="q20" value="c"> c) Front left, front right, subwoofer, and a single surround speaker</label><br>
+        <label><input type="radio" name="q20" value="d"> d) Two front speakers and a single subwoofer</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+
+    // Answer key for Chapter 4 Quiz
+    const answerKey = [
+      "b", // Q1
+      "c", // Q2
+      "b", // Q3
+      "b", // Q4
+      "a", // Q5
+      "a", // Q6
+      "a", // Q7
+      "c", // Q8
+      "b", // Q9
+      "a", // Q10
+      "c", // Q11
+      "b", // Q12
+      "a", // Q13
+      "b", // Q14
+      "b", // Q15
+      "a", // Q16
+      "b", // Q17
+      "a", // Q18
+      "a", // Q19
+      "b"  // Q20
+    ];
+
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>

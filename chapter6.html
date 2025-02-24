@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 6: Home Theater Setup</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+    header nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    h1, h2, h3 { color: #222; }
+    .hidden { display: none; }
+    .feedback { margin-top: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    button { padding: 8px 12px; margin-top: 10px; }
+    .question { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <a href="chapter6.html">Chapter 6</a>
+      <a href="chapter7.html">Chapter 7</a>
+      <a href="chapter8.html">Chapter 8</a>
+      <a href="chapter9.html">Chapter 9</a>
+      <a href="chapter10.html">Chapter 10</a>
+      <a href="chapter11.html">Chapter 11</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Quiz Content (1-Pager) for Chapter 6 -->
+  <div id="contentView">
+    <h1>Chapter 6: Home Theater Setup — Pre-Quiz One-Pager</h1>
+    <p>A home theater system recreates cinema-like audio at home by using multiple speakers and an AVR (Audio/Video Receiver). Understanding the components, configurations, and setup techniques is essential for achieving an immersive home theater experience.</p>
+    
+    <h2>1. Home Theater Basics</h2>
+    <p><strong>Common Setups:</strong></p>
+    <ul>
+      <li><strong>5.1 System:</strong> Five speakers (front left, center, front right, surround left, surround right) + one subwoofer.</li>
+      <li><strong>7.1 System:</strong> Same as 5.1 but with two additional rear surround speakers.</li>
+      <li><strong>5.1.2 or 7.1.2 (Dolby Atmos):</strong> Includes height channels for overhead sound effects.</li>
+    </ul>
+    
+    <h2>2. Speaker Placement and Calibration</h2>
+    <p><strong>Front L/R:</strong> Main stereo speakers — handle music and most sound effects.</p>
+    <p><strong>Center:</strong> Delivers dialogue and on-screen sounds.</p>
+    <p><strong>Surrounds:</strong> Provide ambient and directional effects.</p>
+    <p><strong>Subwoofer:</strong> Handles low-frequency effects (LFE) like explosions or deep bass.</p>
+    <p><strong>Height Channels:</strong> Used in Dolby Atmos setups for overhead sound effects.</p>
+    <p><strong>Key Setup Concepts:</strong></p>
+    <ul>
+      <li><strong>Crossover:</strong> The frequency point where the AVR sends bass to the subwoofer instead of the speakers (80Hz is a common starting point).</li>
+      <li><strong>Speaker Distance:</strong> Set precise distances in the AVR to align sound timing for all speakers.</li>
+      <li><strong>Phase Alignment:</strong> Ensures the subwoofer and main speakers produce bass in sync.</li>
+    </ul>
+    
+    <h2>3. Calibration Tools</h2>
+    <p><strong>YPAO (Yamaha), Audyssey, Dirac:</strong> Auto-calibration systems that adjust EQ, delay, and crossover for your room’s acoustics.</p>
+    <p><strong>Manual Calibration:</strong> Fine-tuning speaker levels, distance, and crossover by ear or with an SPL meter.</p>
+    
+    <h2>4. Common Home Theater Configurations</h2>
+    <ul>
+      <li><strong>2.0 and 2.1 Systems:</strong> Stereo setups with or without a subwoofer. Best for music and casual TV watching.</li>
+      <li><strong>5.1 and 7.1 Systems:</strong> Surround sound setups ideal for movies and immersive audio experiences.</li>
+      <li><strong>Atmos Configurations (e.g., 5.1.2, 7.1.4):</strong> Include height channels for a more immersive 3D soundstage.</li>
+    </ul>
+    
+    <h2>5. Troubleshooting Tips</h2>
+    <ul>
+      <li><strong>Muffled Dialogue:</strong> Adjust the center channel level or check placement.</li>
+      <li><strong>Boomy Bass:</strong> Move the subwoofer away from corners or adjust crossover settings.</li>
+      <li><strong>Weak Surround Effects:</strong> Ensure proper placement and distance settings in the AVR.</li>
+    </ul>
+    
+    <h2>6. Conclusion</h2>
+    <p>Setting up a home theater involves careful speaker placement, calibration, and understanding how each component contributes to the overall experience. In the next section, you’ll test your knowledge with practical scenarios!</p>
+    <button onclick="toggleView()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz View (initially hidden) for Chapter 6 -->
+  <div id="quizView" class="hidden">
+    <h1>Chapter 6 Quiz: Setting Up a Home Theater System</h1>
+    <form id="quizForm">
+      <!-- Section 1: Basic Home Theater Concepts -->
+      <div class="question">
+        <p>1. What’s the primary difference between a 5.1 and a 7.1 surround sound system?</p>
+        <label><input type="radio" name="q1" value="a"> a) Speaker impedance</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Number of subwoofers</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Number of surround channels</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Amplifier power requirement</label>
+      </div>
+      <div class="question">
+        <p>2. Why is speaker distance calibration important in a home theater system?</p>
+        <label><input type="radio" name="q2" value="a"> a) It prevents speakers from overheating</label><br>
+        <label><input type="radio" name="q2" value="b"> b) It aligns the timing of sound arrival for proper imaging</label><br>
+        <label><input type="radio" name="q2" value="c"> c) It balances frequency response</label><br>
+        <label><input type="radio" name="q2" value="d"> d) It reduces distortion</label>
+      </div>
+      <div class="question">
+        <p>3. What’s the recommended height for front left and right speakers?</p>
+        <label><input type="radio" name="q3" value="a"> a) Ear level when seated</label><br>
+        <label><input type="radio" name="q3" value="b"> b) At floor level</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Above the listening position</label><br>
+        <label><input type="radio" name="q3" value="d"> d) At the same height as the subwoofer</label>
+      </div>
+      <div class="question">
+        <p>4. Why is the crossover frequency typically set to 80 Hz?</p>
+        <label><input type="radio" name="q4" value="a"> a) It’s the industry standard for THX systems</label><br>
+        <label><input type="radio" name="q4" value="b"> b) It’s where most speakers roll off their bass response</label><br>
+        <label><input type="radio" name="q4" value="c"> c) It improves surround sound imaging</label><br>
+        <label><input type="radio" name="q4" value="d"> d) It prevents phase issues</label>
+      </div>
+      <div class="question">
+        <p>5. What’s the primary role of the center channel speaker?</p>
+        <label><input type="radio" name="q5" value="a"> a) Reproduce low-frequency effects</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Deliver dialogue and front-stage clarity</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Handle surround effects</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Boost bass response</label>
+      </div>
+      
+      <!-- Section 2: Speaker Placement and Configuration -->
+      <div class="question">
+        <p>6. Where should surround speakers ideally be placed in a 5.1 system?</p>
+        <label><input type="radio" name="q6" value="a"> a) In front of the listening position</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Slightly behind and to the sides of the listening position</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Directly above the seating area</label><br>
+        <label><input type="radio" name="q6" value="d"> d) At the same level as the front speakers</label>
+      </div>
+      <div class="question">
+        <p>7. Why is subwoofer placement crucial for bass performance?</p>
+        <label><input type="radio" name="q7" value="a"> a) Bass waves interact heavily with room acoustics</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Subwoofers require line-of-sight for clarity</label><br>
+        <label><input type="radio" name="q7" value="c"> c) High frequencies distort if the subwoofer is misaligned</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Subwoofer placement only matters in larger rooms</label>
+      </div>
+      <div class="question">
+        <p>8. What does room correction software like YPAO or Audyssey do?</p>
+        <label><input type="radio" name="q8" value="a"> a) Adjust crossover frequencies automatically</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Measure room acoustics and optimize speaker output</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Balance amplifier power across channels</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Synchronize audio with video output</label>
+      </div>
+      <div class="question">
+        <p>9. How can you fix a system that sounds too harsh or bright?</p>
+        <label><input type="radio" name="q9" value="a"> a) Increase the crossover frequency</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Lower the treble or use EQ correction</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Move the subwoofer closer to the listening position</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Turn off room correction software</label>
+      </div>
+      <div class="question">
+        <p>10. What’s the advantage of using bi-pole or di-pole speakers for surround channels?</p>
+        <label><input type="radio" name="q10" value="a"> a) They create a more diffuse, enveloping surround effect</label><br>
+        <label><input type="radio" name="q10" value="b"> b) They produce more directional sound</label><br>
+        <label><input type="radio" name="q10" value="c"> c) They enhance low-frequency effects</label><br>
+        <label><input type="radio" name="q10" value="d"> d) They eliminate the need for a center channel</label>
+      </div>
+      
+      <!-- Section 3: Advanced Configurations and Real-World Scenarios -->
+      <div class="question">
+        <p>11. What’s the recommended subwoofer crossover setting for small bookshelf speakers?</p>
+        <label><input type="radio" name="q11" value="a"> a) 40 Hz</label><br>
+        <label><input type="radio" name="q11" value="b"> b) 60 Hz</label><br>
+        <label><input type="radio" name="q11" value="c"> c) 80 Hz</label><br>
+        <label><input type="radio" name="q11" value="d"> d) 100 Hz</label>
+      </div>
+      <div class="question">
+        <p>12. In a home theater, what’s the benefit of using two subwoofers?</p>
+        <label><input type="radio" name="q12" value="a"> a) Louder bass output</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Better bass distribution and fewer room nulls</label><br>
+        <label><input type="radio" name="q12" value="c"> c) Increased power efficiency</label><br>
+        <label><input type="radio" name="q12" value="d"> d) Faster frequency response</label>
+      </div>
+      <div class="question">
+        <p>13. Why is phase alignment between subwoofer and speakers important?</p>
+        <label><input type="radio" name="q13" value="a"> a) It prevents speaker damage</label><br>
+        <label><input type="radio" name="q13" value="b"> b) It ensures bass frequencies don’t cancel out</label><br>
+        <label><input type="radio" name="q13" value="c"> c) It improves dialogue clarity</label><br>
+        <label><input type="radio" name="q13" value="d"> d) It enhances treble performance</label>
+      </div>
+      <div class="question">
+        <p>14. What’s the ideal vertical angle for overhead Atmos (Top Front) speakers?</p>
+        <label><input type="radio" name="q14" value="a"> a) 10–20°</label><br>
+        <label><input type="radio" name="q14" value="b"> b) 30–40°</label><br>
+        <label><input type="radio" name="q14" value="c"> c) 45–55°</label><br>
+        <label><input type="radio" name="q14" value="d"> d) 65–75°</label>
+      </div>
+      <div class="question">
+        <p>15. Which channel carries low-frequency effects (LFE) in a surround system?</p>
+        <label><input type="radio" name="q15" value="a"> a) Center channel</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Left surround</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Subwoofer (LFE) channel</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Front left speaker</label>
+      </div>
+      
+      <div class="feedback" id="quizFeedback"></div>
+      <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+      <button type="button" onclick="toggleView()">Back to Content</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle between pre-quiz content and quiz view
+    function toggleView() {
+      const content = document.getElementById("contentView");
+      const quiz = document.getElementById("quizView");
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        quiz.classList.add("hidden");
+      } else {
+        content.classList.add("hidden");
+        quiz.classList.remove("hidden");
+      }
+      // Clear previous feedback and reset form
+      document.getElementById("quizFeedback").innerHTML = "";
+      document.getElementById("quizForm").reset();
+    }
+
+    // Answer key for Chapter 6 Quiz
+    const answerKey = [
+      "c", // Q1
+      "b", // Q2
+      "a", // Q3
+      "b", // Q4
+      "b", // Q5
+      "b", // Q6
+      "a", // Q7
+      "b", // Q8
+      "b", // Q9
+      "a", // Q10
+      "d", // Q11
+      "b", // Q12
+      "b", // Q13
+      "c", // Q14
+      "c"  // Q15
+    ];
+
+    function gradeQuiz() {
+      let score = 0;
+      const total = answerKey.length;
+      let feedbackHtml = "";
+      for (let i = 0; i < total; i++) {
+        const qName = "q" + (i + 1);
+        const radios = document.getElementsByName(qName);
+        let userAnswer = "";
+        for (let radio of radios) {
+          if (radio.checked) {
+            userAnswer = radio.value;
+            break;
+          }
+        }
+        if (userAnswer === answerKey[i]) {
+          score++;
+          feedbackHtml += `<p>Question ${i + 1}: <span class="correct">Correct</span></p>`;
+        } else {
+          feedbackHtml += `<p>Question ${i + 1}: <span class="incorrect">Incorrect</span>. Correct answer: ${answerKey[i].toUpperCase()}</p>`;
+        }
+      }
+      feedbackHtml += `<p><strong>Your score: ${score} out of ${total}</strong></p>`;
+      document.getElementById("quizFeedback").innerHTML = feedbackHtml;
+    }
+  </script>
+</body>
+</html>
